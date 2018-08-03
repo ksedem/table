@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Таблица</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/sort.js"></script>
+</head>
+<body>
+	<style>
+		body {
+			height: 95vh;
+			background: linear-gradient(to top right, #EFF5C8, #9B8DAA);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		table {
+			margin:5% auto;
+			border:1px solid black;
+			border-collapse: collapse;
+			width:70%;
+		}
+		th {
+			text-align: center;
+			vertical-align: center;
+			padding:1% 1%;
+			border:1px solid black;
+			background-color: #DBCCEB;
+			font-size: 1.1em;
+		}
+		tr {
+			border:1px solid black;
+		}
+		td {
+			text-align: center;
+			vertical-align: center;
+			padding:1% 1%;
+			border:1px solid black;
+		}
+		tr:nth-child(2n) {
+			background-color: #C5E7E7;
+		}
+		tr:nth-child(2n+1) {
+			background-color: white;
+		}
+		.buttons_block {
+			margin:2% 3%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		.buttons {
+			padding:0.5%;
+			border-radius: 8px;
+			background-color: #BFDB00;
+			cursor: pointer;
+			font-weight: bold;
+		}
+	</style>
+		<div class="buttons_block">
+			<button id="name" class="buttons">Сортировать по названию фильма (А-Я)</button>
+			<button id="year" class="buttons">Сортировать по году выпуска</button>
+			<button id="rating" class="buttons">Сортировать по рейтингу</button>
+			<button id="min" class="buttons">Сортировать по продолжительности</button>
+			<button id="country" class="buttons">Сортировать по стране</button>
+		</div>	
+		<table id="tab1">
+		<tr>
+			<th>Название фильма</th>
+			<th>Год выпуска</th>
+			<th>Рейтинг</th>
+			<th>Продолжительность</th>
+			<th>Страна</th>
+		</tr>
+		<tr>
+			<td>Побег из Шоушенка</td>
+			<td>1994</td>
+			<td>9.112</td>
+			<td>142 мин</td>
+			<td>США</td>
+		</tr>
+		<tr>
+			<td>Зеленая миля</td>
+			<td>1999</td>
+			<td>9.062</td>
+			<td>189 мин</td>
+			<td>США</td>
+		</tr>
+		<tr>
+			<td>Форрест Гамп</td>
+			<td>1994</td>
+			<td>8.918</td>
+			<td>142 мин</td>
+			<td>США</td>
+		</tr>
+		<tr>
+			<td>Список Шиндлера</td>
+			<td>1993</td>
+			<td>8.819</td>
+			<td>195 мин</td>
+			<td>США</td>
+		</tr>
+		<tr>
+			<td>1+1</td>
+			<td>2011</td>
+			<td>8.810</td>
+			<td>112 мин</td>
+			<td>Франция</td>
+		</tr>
+		<tr>
+			<td>Леон</td>
+			<td>1994</td>
+			<td>8.683</td>
+			<td>133 мин</td>
+			<td>Франция</td>
+		</tr>
+		<tr>
+			<td>Начало</td>
+			<td>2010</td>
+			<td>8.665</td>
+			<td>148 мин</td>
+			<td>США</td>
+		</tr>
+		<tr>
+			<td>Жизнь прекрасна</td>
+			<td>1997</td>
+			<td>8.627</td>
+			<td>116 мин</td>
+			<td>Италия</td>
+		</tr>
+	</table>
+</body>
+</html>
